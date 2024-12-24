@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Klassy Cafe - Restaurant HTML Template</title>
+<!--
+    
+TemplateMo 558 Klassy Cafe
+
+https://templatemo.com/tm-558-klassy-cafe
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-klassy-cafe.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet"
+        href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css">
+
+  <link rel="stylesheet" href="assets/css/leaflet.groupedlayercontrol.css">
+  <link rel="stylesheet" href="assets/css/Control.MiniMap.css">
+  <link rel="stylesheet" href="assets/css/L.Control.ZoomBar.css">
+  <link rel="stylesheet" href="assets/css/Leaflet.Coordinates-0.1.5.css">
+
+
+
+    {{-- js --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js">
+    </script>
+    <!-- JS -->
+<script src="assets/js/leaflet.groupedlayercontrol.js"></script>
+<script src="assets/js/Control.MiniMap.js"></script>
+<script src="assets/js/Leaflet.Coordinates-0.1.5.min.js"></script>
+<script src="assets/js/L.Control.ZoomBar.js"></script>
+
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+        <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <img src="assets/images/logo-eat.png"
+                                style="width: 40%; height: auto;" align="klassy cafe html template">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+
+                            <!--
+                            <li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a href="#">Drop Down Page 1</a></li>
+                                    <li><a href="#">Drop Down Page 2</a></li>
+                                    <li><a href="#">Drop Down Page 3</a></li>
+                                </ul>
+                            </li>
+                        -->
+                            <li class="scroll-to-section"><a href="#menu">Menu</a></li>
+                            <li class="scroll-to-section"><a href="#chefs">MAP</a></li>
+                            <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="left-content">
+                        <div class="inner-content">
+                            <h4>WARTEG CIPUTAT</h4>
+                            <h6>THE BEST EXPERIENCE</h6>
+                            <div class="main-white-button scroll-to-section">
+                                <a href="#chefs">See Location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="main-banner header-text">
+                        <div class="Modern-Slider">
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <img src="/assets/images/warteg1.jpeg" alt="">
+                                </div>
+                            </div>
+                            <!-- // Item -->
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <img src="/assets/images/warteg2.webp" alt="">
+                                </div>
+                            </div>
+                            <!-- // Item -->
+                            <!-- Item -->
+                            <div class="item">
+                                <div class="img-fill">
+                                    <img src="/assets/images/warteg3.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- // Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>About Us</h6>
+                            <h2>We Leave A Delicious Memory For You</h2>
+                        </div>
+                        <p>Warteg adalah tempat makan favorit banyak orang karena menyajikan makanan enak dengan harga
+                            terjangkau. Website ini dibuat untuk memudahkan masyarakat menemukan lokasi warteg di Ciputat
+                            dengan cepat dan praktis.
+                        </p>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="assets/images/about1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="assets/images/about2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="assets/images/about3.JPG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+        <section class="section" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="section-heading">
+                        <h6>Our Menu</h6>
+                        <h2>Beberapa menu yang ada di Warteg</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item-carousel">
+            <div class="col-lg-12">
+                <div class="owl-menu-item owl-carousel">
+                    <div class="item">
+                        <div class='card card1'>
+                            <div class='info'>
+                                <h1 class='title'>Ikan Tongkol</h1>
+                                <p class='description'>Ikan tongkol warteg adalah hidangan ikan dengan bumbu pedas atau
+                                    santan, populer di warteg karena rasa gurihnya.</p>
+                                <div class="main-text-button">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card2'>
+                            <div class='info'>
+                                <h1 class='title'>Kentang Goreng</h1>
+                                <p class='description'>Kentang goreng adalah potongan kentang yang digoreng hingga renyah
+                                    dan gurih.</p>
+                                <div class="main-text-button">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card3'>
+                            <div class='info'>
+                                <h1 class='title'>Tempe Orek</h1>
+                                <p class='description'>Tempe orek adalah tempe goreng dengan bumbu kecap manis yang gurih
+                                    dan sedikit manis.</p>
+                                <div class="main-text-button">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card4'>
+                            <div class='info'>
+                                <h1 class='title'>Telur Dadar</h1>
+                                <p class='description'>Telur dadar adalah telur yang dikocok dengan bumbu dan digoreng
+                                    hingga matang.</p>
+                                <div class="main-text-button">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card5'>
+                            <div class='info'>
+                                <h1 class='title'>Tumis Kangkung</h1>
+                                <p class='description'>Tumis kangkung adalah hidangan kangkung yang ditumis dengan bumbu
+                                    sederhana, gurih, dan segar.</p>
+                                <div class="main-text-button">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card3'>
+                            <div class='info'>
+                                <h1 class='title'>Tempe Orek</h1>
+                                <p class='description'>Tempe orek adalah tempe goreng dengan bumbu kecap manis yang gurih
+                                    dan sedikit manis.</p>
+                                <div class="main-text-button">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Chefs Area Starts ***** -->
+<section class="section" id="chefs">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-lg-4 offset-lg-4">
+                    <div class="section-heading">
+                        <h2>Warteg Location in Ciputat</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="display: flex; justify-content: center; align-items: center;">
+                <div id="map"
+                    style="height: 750px; width: 100%; max-width: 1200px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); overflow: hidden; z-index: 0;">
+                </div>
+            </div>
+
+
+            <script>
+                var provin = new L.LayerGroup();
+                var warteg = new L.LayerGroup();
+                var ciputat = new L.LayerGroup();
+
+                var map = L.map("map", {
+                    center: [-6.3035, 106.7644], // Koordinat Ciputat Timur
+                    zoom: 15, // Level zoom cukup dekat untuk menampilkan Ciputat Timur
+                    zoomControl: false,
+                    layers: [],
+                });
+                var GoogleSatelliteHybrid = L.tileLayer(
+                    "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}", {
+                        maxZoom: 22,
+                        attribution: "Warteg Ciputat",
+                    }
+                ).addTo(map);
+
+                var Esri_NatGeoWorldMap = L.tileLayer(
+                    "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}", {
+                        attribution: "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
+                        maxZoom: 16,
+                    }
+                );
+
+                var GoogleMaps = new L.TileLayer(
+                    "https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", {
+                        opacity: 1.0,
+                        attribution: "Latihan Web GIS",
+                    }
+                );
+
+                var GoogleRoads = new L.TileLayer(
+                    "https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}", {
+                        opacity: 1.0,
+                        attribution: "Latihan Web GIS",
+                    }
+                );
+
+                var baseLayers = {
+                    "Google Satellite Hybrid": GoogleSatelliteHybrid,
+                    "Esri NatGeo World Map": Esri_NatGeoWorldMap,
+                    "Google Maps": GoogleMaps,
+                    "Google Roads": GoogleRoads,
+                };
+
+                var groupedOverLayers = {
+                    "Peta Dasar": {
+                        Provinsi: provin,
+                        "Ciputat Timur": ciputat,
+                    },
+                };
+
+                var overlayLayers = {};
+                L.control.groupedLayers(baseLayers, groupedOverLayers).addTo(map);
+
+                var osmUrl =
+                    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
+                var osmAttrib = "Map data &copy; OpenStreetMap contributors";
+
+                // Layer tile untuk peta mini
+                var osm2 = new L.TileLayer(osmUrl, {
+                    minZoom: 0,
+                    maxZoom: 13,
+                    attribution: osmAttrib,
+                });
+
+                // Opsi tampilan untuk rect dalam MiniMap
+                var rect1 = {
+                    color: "#ff1100",
+                    weight: 3,
+                };
+                var rect2 = {
+                    color: "#0000AA",
+                    weight: 1,
+                    opacity: 0,
+                    fillOpacity: 0,
+                };
+
+                // Inisialisasi MiniMap dengan opsi yang sudah ditentukan
+                var miniMap = new L.Control.MiniMap(osm2, {
+                    toggleDisplay: true,
+                    position: "bottomright",
+                    aimingRectOptions: rect1,
+                    shadowRectOptions: rect2,
+                }).addTo(map);
+
+                L.Control.geocoder({
+                    position: "topleft",
+                    collapsed: true,
+                }).addTo(map);
+
+                //menambahkan koordinat
+                var locateControl = L.control
+                    .locate({
+                        position: "topleft",
+                        drawCircle: true,
+                        follow: true,
+                        setView: true,
+                        keepCurrentZoomLevel: true,
+                        markerStyle: {
+                            weight: 1,
+                            opacity: 0.8,
+                            fillOpacity: 0.8,
+                        },
+                        circleStyle: {
+                            weight: 1,
+                            clickable: false,
+                        },
+                        icon: "fa fa-location-arrow",
+                        metric: false,
+                        strings: {
+                            title: "My location",
+                            popup: "You are within {distance} {unit} from this point",
+                            outsideMapBoundsMsg: "You seem located outside the boundaries of the map",
+                        },
+                        locateOptions: {
+                            maxZoom: 18,
+                            watch: true,
+                            enableHighAccuracy: true,
+                            maximumAge: 10000,
+                            timeout: 10000,
+                        },
+                    })
+                    .addTo(map);
+
+                var zoom_bar = new L.Control.ZoomBar({
+                    position: "topleft",
+                }).addTo(map);
+
+                L.control
+                    .coordinates({
+                        position: "bottomleft",
+                        decimals: 2,
+                        decimalSeperator: ",",
+                        labelTemplateLat: "Latitude: {y}",
+                        labelTemplateLng: "Longitude: {x}",
+                    })
+                    .addTo(map);
+                /* scala */
+                L.control
+                    .scale({
+                        metric: true,
+                        position: "bottomleft",
+                    })
+                    .addTo(map);
+
+
+
+                var cardinalDirectionControl = L.control({ position: "bottomleft" });
+
+    cardinalDirectionControl.onAdd = function(map) {
+        var div = L.DomUtil.create("div", "cardinal-direction-container");
+        div.innerHTML = '<img src="public/cardinal-direction.png" alt="Cardinal Direction" style="width: 150px; height: auto; margin: 10px;">';
+        return div;
+    };
+
+    // Add the custom control to the map
+    cardinalDirectionControl.addTo(map);
+
+
+                $.getJSON("public/prov_polygon.geojson", function(data) {
+                    L.geoJson(data, {
+                        style: function(feature) {
+                            let fillColor;
+                            const kode = feature.properties.kode;
+
+                            if (kode > 21) fillColor = "#006837";
+                            else if (kode > 20) fillColor = "#fec44f";
+                            else if (kode > 19) fillColor = "#c2e699";
+                            else if (kode > 18) fillColor = "#fee0d2";
+                            else if (kode > 17) fillColor = "#756bb1";
+                            else if (kode > 16) fillColor = "#8c510a";
+                            else if (kode > 15) fillColor = "#01665e";
+                            else if (kode > 14) fillColor = "#e41a1c";
+                            else if (kode > 13) fillColor = "#636363";
+                            else if (kode > 12) fillColor = "#762a83";
+                            else if (kode > 11) fillColor = "#1b7837";
+                            else if (kode > 10) fillColor = "#d53e4f";
+                            else if (kode > 9) fillColor = "#67001f";
+                            else if (kode > 8) fillColor = "#c994c7";
+                            else if (kode > 7) fillColor = "#fdbb84";
+                            else if (kode > 6) fillColor = "#dd1c77";
+                            else if (kode > 5) fillColor = "#3182bd";
+                            else if (kode > 4) fillColor = "#f03b20";
+                            else if (kode > 3) fillColor = "#31a354";
+                            else if (kode > 2) fillColor = "#78c679";
+                            else if (kode > 1) fillColor = "#c2e699";
+                            else if (kode > 0) fillColor = "#ffffcc";
+                            else fillColor = "#f7f7f7"; // No data
+
+                            return {
+                                color: "#999",
+                                weight: 1,
+                                fillColor: fillColor,
+                                fillOpacity: 0.6,
+                            };
+                        },
+                        onEachFeature: function(feature, layer) {
+                            layer.bindPopup(feature.properties.PROV);
+                        },
+                    }).addTo(provin);
+                });
+
+                $.getJSON("public/ciputat_timur_polygon.geojson", function(data) {
+                    L.geoJson(data, {
+                        style: function(feature) {
+                            let fillColor;
+                            const kode = feature.properties.kode;
+
+                            if (kode > 21) fillColor = "#006837";
+                            else if (kode > 20) fillColor = "#fec44f";
+                            else if (kode > 19) fillColor = "#c2e699";
+                            else if (kode > 18) fillColor = "#fee0d2";
+                            else if (kode > 17) fillColor = "#756bb1";
+                            else if (kode > 16) fillColor = "#8c510a";
+                            else if (kode > 15) fillColor = "#01665e";
+                            else if (kode > 14) fillColor = "#e41a1c";
+                            else if (kode > 13) fillColor = "#636363";
+                            else if (kode > 12) fillColor = "#762a83";
+                            else if (kode > 11) fillColor = "#1b7837";
+                            else if (kode > 10) fillColor = "#d53e4f";
+                            else if (kode > 9) fillColor = "#67001f";
+                            else if (kode > 8) fillColor = "#c994c7";
+                            else if (kode > 7) fillColor = "#fdbb84";
+                            else if (kode > 6) fillColor = "#dd1c77";
+                            else if (kode > 5) fillColor = "#3182bd";
+                            else if (kode > 4) fillColor = "#f03b20";
+                            else if (kode > 3) fillColor = "#31a354";
+                            else if (kode > 2) fillColor = "#78c679";
+                            else if (kode > 1) fillColor = "#c2e699";
+                            else if (kode > 0) fillColor = "#ffffcc";
+                            else fillColor = "#f7f7f7"; // No data
+
+                            return {
+                                color: "#999",
+                                weight: 1,
+                                fillColor: fillColor,
+                                fillOpacity: 0.6,
+                            };
+                        },
+                        onEachFeature: function(feature, layer) {
+                            layer.bindPopup(feature.properties.NAME_4);
+                        },
+                    }).addTo(ciputat);
+                });
+
+                // Menyesuaikan layer GeoJSON yang di-load agar sesuai dengan Ciputat Timur
+                $.getJSON("public/warteg_ciputat.geojson", function(data) {
+                    var ratIcon = L.icon({
+                        iconUrl: "public/marker-1.png",
+                        iconSize: [20, 40],
+                    });
+
+                    L.geoJson(data, {
+                        pointToLayer: function(feature, latlng) {
+                            var marker = L.marker(latlng, {
+                                icon: ratIcon
+                            });
+
+                            // Gabungkan nama dan gambar dalam satu konten popup
+                            var popupContent = `
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <h3>${
+                        feature.properties.Nama_Warteg || "Nama tidak tersedia"
+                    }</h3>
+                    <img src="${
+                        feature.properties.image || ""
+                    }" alt="Warteg Image" style="width:150px; height:auto;">
+                    <p>${
+                        feature.properties.Alamat || "Alamat tidak tersedia"
+                    }</p>
+                </div>`;
+
+                            marker.bindPopup(popupContent); // Bind popup dengan konten gabungan
+                            return marker;
+                        },
+                    }).addTo(map);
+                });
+            </script>
+
+
+        </div>
+</section>
+
+
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-xs-12">
+                <div class="right-text-content">
+                    <ul class="social-icons">
+                        <li><a href="https://github.com/mizanade" target="blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mizanade" target="blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/mizan_a.a" target="blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="logo">
+                    <a href="#"><img src="assets/images/logo-eat.png"
+                            style="width: 20%; height: auto" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="left-text-content">
+                    <p>© Copyright Mizan Ade Arfani
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+  </body>
+</html>
